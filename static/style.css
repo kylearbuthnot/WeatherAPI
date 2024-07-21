@@ -11,7 +11,12 @@ body {
   gap: 10px;
 }
 
-.text-box {
+.city-text-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-text-box {
   margin-bottom: 10px;
 }
 
@@ -21,6 +26,15 @@ textarea {
   padding: 10px;
   box-sizing: border-box;
 }
+
+#city_name{
+  width: 50%;
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+
 
 #submit-button {
   padding: 10px 20px;
