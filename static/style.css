@@ -61,6 +61,7 @@ textarea {
 
 .report-text-box{
   margin-bottom: 10px;
+  pointer-events: none;
 }
 
 
