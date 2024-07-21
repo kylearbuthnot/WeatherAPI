@@ -21,8 +21,16 @@ textarea {
   cursor: pointer;
 }
 
-#submit-button:hover {
+#submit-button::active{
+  background-color: #004080;
+}
+
+#submit-button::hover {
   background-color: #0056b3;
+}
+
+#submit-button::focus{
+  outline: 2px solid #0056b3;
 }
 
 @keyframes fadeIn{
