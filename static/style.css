@@ -19,18 +19,20 @@ textarea {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.1s ease;
 }
 
-#submit-button::active{
-  background-color: #004080;
-}
-
-#submit-button::hover {
+#submit-button:hover {
   background-color: #0056b3;
 }
 
-#submit-button::focus{
+#submit-button:focus{
   outline: 2px solid #0056b3;
+}
+
+#submit-button:active{
+  background-color: #007BFF;
+  outline-offset: 1px;
 }
 
 @keyframes fadeIn{
@@ -48,25 +50,37 @@ textarea {
   1s forwards;
 }
 
+/*Position title and header into the center via div.*/
+.title-header-div{
+  width: 400px;
+  margin: auto;
+}
 
-
-.city-text-box{
+/*the div for city txt & gen rep button*/
+.citytxtbx-and-rep-btn{
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 15px;
+  margin-top:25px;
+  margin-bottom: 25px;
   height: 32px;
 }
 
 #city_name{
   width: 50%;
   height: 30px;
+  border-radius: 12px; /*apple edges*/
+  border-width: 0.10em; /*slim border*/
 }
 
 #submit-button{
   height: 30px;
+  border-radius: 12px;
+  border-width: 0.10em;
 }
 
+/*div for the report text box.*/
 .report-text-box{
   margin-bottom: 10px;
   pointer-events: none;

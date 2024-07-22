@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="../static/style.css"></link>
   </head>
   <body>
-<h1>Weather Report App</h1>
+    <div class="title-header-div">
+      <h1>Weather Report App</h1>
     <p> Simply type your city into the text box below.</p>
-  <div class="container">
-      <div class="city-text-box">
-        <textarea id="city_name" name="city_name" placeholder="Your City Here." maxlength="100000"></textarea>
+    </div>
+      <div class="citytxtbx-and-rep-btn">
+        <input id="city_name" name="city_name" placeholder="Your City Here." maxlength="100000"></textarea>
         <button id="submit-button" class="submit-button" >
           <span class="submit-button-text">Generate Report</span>
         </button>
@@ -20,7 +21,6 @@
       <div class="report-text-box"> 
       <textarea id="report" name="report_text" placeholder="Weather will appear here" readonly></textarea>
       </div>
-    </div>
     <script src="../static/script.js"></script>
   </body>
 </html>
