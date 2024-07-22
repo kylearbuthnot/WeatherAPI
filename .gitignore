@@ -3,3 +3,6 @@
  
 # ignore codesandbox
 .codesandbox/
+
+# ignore __pycache__
+.__pycache__/
