@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   setUpEventListeners();
 })
 
-//todo find out why the elements are not being captured properly. 
-//double check names again on css, html, and here.
 
-//function that activates when the user clicks the submit button.
+
+//for some reason this works now and I swear I had the same exact code I am going to bed gn.
 function clickSubmit(){
-  const inputCityName = document.getElementById('city_name');
-  console.log(inputCityName.value)
+  const reportBox = document.getElementById('report');
+  const userInput = document.getElementById('city_name');
+  reportBox.value = userInput.value;
 }
