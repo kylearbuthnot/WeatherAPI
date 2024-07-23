@@ -17,7 +17,7 @@ function clickSubmit(){
   //All this does is types whatever the user has typed, and copys and pastes it into the report text box.
   const reportBox = document.getElementById('report');
   const userInput = document.getElementById('city_name');
-  searchCity = userInput.value;
+  let searchCity = userInput.value;
   
   //If the users city has whitespace in it... eliminate it.
   if(searchCity.includes(' ')){
