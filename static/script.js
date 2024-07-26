@@ -1,18 +1,30 @@
 //function that sets up the event listeners
 function setUpEventListeners(){
+  //First set up event listeners for the submit button.
   const submitButton = document.getElementById('submit-button');
-  
+  //Click event listener, calls the click submit button.
   submitButton.addEventListener('click', clickSubmit);
+
+  //Enter keypress event listener, esentially clicks the button.
+  const cityInput = document.getElementById('city_name');
+  cityInput.addEventListener('keydown', function(event){
+  if(event.key === 'Enter'){ //if the user presses enter after typing their city.
+    //prevent the default action (look this up in chatgpt or on docs)
+    event.preventDefault();
+    //Click the generate report button
+    submitButton.click();
+  }
+});
 }
 
-//wait for dom to fully load
+
+//Wait for the dom to fully load prior to hooking up the event listeners.
 document.addEventListener('DOMContentLoaded', () => {
   setUpEventListeners();
 })
 
 
-
-//for some reason this works now and I swear I had the same exact code I am going to bed gn.
+//Function to determine what actions to take when the user submits their city.
 function clickSubmit(){
   //All this does is types whatever the user has typed, and copys and pastes it into the report text box.
   const reportBox = document.getElementById('report');

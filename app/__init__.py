@@ -13,4 +13,4 @@ app.config.from_object(Config)
 from app import routes
 
 #double checking env var's work.
-#print("API Key:", app.config['WEATHER_API_KEY'])
+print("API Key:", app.config['WEATHER_API_KEY'])
