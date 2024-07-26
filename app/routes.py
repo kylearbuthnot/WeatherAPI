@@ -13,6 +13,7 @@ def homePage():
 @app.route('/weather', methods=['GET'])
 def get_weather():
     city = request.args.get('city_name') #use requests to get the city args
+    print(f'city in weather route = ${city}')
     if not city: #if user did not input anything, return a 400 error.
         return jsonify({'error': 'City name is required.'}), 400
     api_key = app.config['OPEN_WEATHER_MAP'] #set the api key.
