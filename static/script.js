@@ -39,7 +39,7 @@ async function clickSubmit(){
   //try catch block for api call
   try{
     //make api call to the flask weather route
-    const response = await fetch(`/weather?city_name=${encodeURIComponent(searchCity)}`,{
+    const response = await fetch(`/weather?city_name=${searchCity}`,{
       method: 'GET',
       headers:{
         'Content-Type': 'application/x-www-form-urlencoded',
