@@ -46,8 +46,10 @@ async function clickSubmit(){
       }
     });
 
-    console.log("HERE ${response}");
-    
+    //debugging purposes
+    console.log("Response Status:", response.status);
+    console.log("Response Headers:", response.headers);
+
     const data = await response.json();
     console.log(data);
 
